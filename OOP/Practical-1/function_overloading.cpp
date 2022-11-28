@@ -17,13 +17,13 @@ float area(float bs,float ht) {
 int main() {
     int s,l,b;
     float r,bs,ht;
-    cout<<"Enter side of a square:";
+    cout<<"Enter side of a square: ";
     cin>>s;
-    cout<<"Enter length and breadth of rectangle:";
+    cout<<"Enter length and breadth of rectangle: ";
     cin>>l>>b;
-    cout<<"Enter radius of circle:";
+    cout<<"Enter radius of circle: ";
     cin>>r;
-    cout<<"Enter base and height of triangle:";
+    cout<<"Enter base and height of triangle: ";
     cin>>bs>>ht;
     cout<<"Area of square is"<<area(s);
     cout<<"\nArea of rectangle is "<<area(l,b);

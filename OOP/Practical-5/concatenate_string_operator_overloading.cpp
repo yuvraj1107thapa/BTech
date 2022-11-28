@@ -1,6 +1,5 @@
 #include<iostream>
 #include<string.h>
-#include<conio.h>
 using namespace std;
 
 class String {
@@ -39,11 +38,12 @@ String operator +(String &s1, String &s2){
 }
 
 int main() {
-  String s1("Ram"), s2("Kumar");
+  char c1[]="Ram";
+  char c2[]="Kumar";
+  String s1(c1), s2(c2);
   String s3;
   s3=s1+s2;
   cout<<"s3 is:";
   show(s3);
-  getch();
   return 0;
 }

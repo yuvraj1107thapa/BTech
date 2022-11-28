@@ -1,25 +1,23 @@
 #include <bits/stdc++.h>
 using namespace std;
  
-string removeChars(string s1, string s2 ) {
+string removeChars(string s1, string s2) {
     int arr[26] = { 0 }; 
-    int curr = 0;
-    for (int i = 0; i < s1.size(); i++) { 
+    for (int i = 0; i < s2.size(); i++) { 
         arr[s2[i] - 'a'] = -1;
     }
-    s1.clear();
-    for (int i = 0; i < s2.size(); i++) {
+    string ans = "";
+    for (int i = 0; i < s1.size(); i++) {
         if (arr[s1[i] - 'a'] != -1) { 
-            s1[curr] = s1[i];       
-            curr++;       
+            ans += s1[i];      
         }
     }
-    return s1;
+    return ans;
 }
 
 int main() {
-    char string1[] = "imyuvrajthapa";
-    char string2[] = "im";
-    cout << removeChars(string1, string2) << endl;
+    string s1 = "imyuvrajthapa";
+    string s2 = "im";
+    cout << removeChars(s1, s2) << endl;
     return 0;
 }

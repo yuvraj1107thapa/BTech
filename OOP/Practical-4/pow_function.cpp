@@ -14,12 +14,12 @@ int main() {
     double no,ans;
     int pow;
     char wish;
-    cout<<"\n Enter A Number :- ";
+    cout<<"\n Enter A Number: ";
     cin>>no;
     cout<<"\n You Wish To Enetr Power y/n = ";
     cin>>wish;
     if(wish=='y') {
-        cout<<"\n Enetr A Power Please = ";
+        cout<<"\n Enter A Power Please: ";
         cin>>pow;
         ans=power(no,pow);
         cout<<"\n Ans = "<<ans;

@@ -6,7 +6,7 @@ int main() {
     int no_unit;
     float charge,scharge;
     string name;
-    cout<<"\n enter name and number of units consumed";
+    cout<<"Enter name and number of units consumed: ";
     cin>>name;
     cin>>no_unit;
     if(no_unit<=100) {
@@ -25,7 +25,7 @@ int main() {
         scharge=(0.15*charge);
         charge+=scharge;
     }
-    cout<<"electricity bill \n";
-    cout<<name<<" : : rs"<<charge;
+    cout<<"Electricity bill \n";
+    cout<<name<<" : : Rs. "<<charge;
     return(0);
 }

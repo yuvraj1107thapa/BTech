@@ -20,7 +20,8 @@ class student {
  }
 
  int main() {
-    student s[2];
+    student s[2];	
+    cout<<"Note: name should be in lowercase."<<endl;
     for(int i=0;i<2;i++) {
         s[i].getdata();
     }

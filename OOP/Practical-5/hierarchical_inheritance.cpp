@@ -6,7 +6,7 @@ class Parent { // Base class
     int a,b;   
     void Inputdata() 
     {  
-        cout << "\nEnter two nos:";  
+        cout << "\nEnter two numbers: ";  
         cin >> a >> b;  
     }  
 };  
@@ -15,7 +15,7 @@ class child1 : public Parent { //child1 is derived from class Parent
     public:  
     void sum()  
     {  
-        cout << "\nSum= " << a + b; 
+        cout << "Sum= " << a + b; 
     } 
 };  
 
@@ -23,7 +23,7 @@ class child2 : public Parent { //child2 is derived from class Parent
     public:  
     void difference()  
     {  
-        cout << "\nDifference= " << abs(a - b); 
+        cout << "Difference= " << abs(a - b); 
     }  
 };  
 
@@ -31,7 +31,7 @@ class child3 : public Parent { //child3 is derived from class Parent
     public:  
     void multiply()  
     {  
-        cout << "\nProduct= " << a*b; 
+        cout << "Product= " << a*b; 
     }  
 };
 

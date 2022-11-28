@@ -5,7 +5,7 @@ class Statico {
     static int number;
     public:
     static void print_number() {
-        cout << "The number is" << number << endl;
+        cout << "The number is " << number << endl;
     }
 };
 int Statico::number=25;
