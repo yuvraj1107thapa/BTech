@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <sstream>
 using namespace std;
 
 class student {
@@ -10,6 +11,7 @@ class student {
  };
  void student::getdata() {
     cout<<"Enter the name: ";
+    cin.ignore();
     getline(cin,name);
  }
  void student::display() {
@@ -20,17 +22,20 @@ class student {
  }
 
  int main() {
-    student s[2];	
-    cout<<"Note: name should be in lowercase."<<endl;
-    for(int i=0;i<2;i++) {
-        s[i].getdata();
-    }
+     cout << "Note: name should be in lowercase." << endl;
+     int n;
+     cout << "Enter number of students: ";
+     cin >> n;
+     student s[n];
+     for (int i = 0; i < n; i++) {
+         s[i].getdata();
+     }
     cout << "After String is Sorted." << endl;
-    for(int i=0;i<2;i++) {
+    for(int i=0;i<n;i++) {
         s[i].sortString();
     }
-    for(int j=0;j<2;j++) {
-        cout << "Name 1: ";
+    for(int j=0;j<n;j++) {
+        cout << "Name " <<j<<": ";
         s[j].display();
     }
     return 0;

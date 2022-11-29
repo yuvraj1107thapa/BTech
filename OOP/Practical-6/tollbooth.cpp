@@ -29,7 +29,7 @@ int main() {
     tollbooth t;
     do {
         cout<<" 1 for paying \n 2 for nopaying \n 3 Display/Exit \n";
-        cout<<"Enter choice \n";
+        cout<<"Enter choice: ";
         cin>>ch;
         switch(ch) {
             case 1:
@@ -47,7 +47,7 @@ int main() {
         }
 
         if(c=='y'||c=='Y') {
-            cout<<"\nDo you want to continue";
+            cout<<"\nDo you want to continue y/n ";
             cin>>c;
         }
     } while(c=='y'||c=='Y');

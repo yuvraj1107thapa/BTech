@@ -6,7 +6,7 @@ class Employee {
     protected:                                         
         string pname;
     public:
-        int phone_no;   
+        long long int phone_no;   
         int eno;
         string ename;
 };
@@ -14,7 +14,7 @@ class Employee {
 class Manager : public Employee {
     public:
         string deptname;
-        float basic_salary;
+        long long int basic_salary;
 };
 
 class Department: public Manager {
@@ -23,11 +23,13 @@ class Department: public Manager {
             cout<<"\n Enter Employee No. : ";
             cin>>eno;
             cout<<"\n Enter Name : ";
-            cin>>ename;
+            cin.ignore();
+            getline(cin,ename);
             cout<<"\n Enter Phone No. : ";
             cin>>phone_no;
             cout<<"\n Enter Department Name : ";
-            cin>>deptname;
+            cin.ignore();
+            getline(cin,deptname);
             cout<<"\n Enter Basic Salary : ";
             cin>>basic_salary;
         }

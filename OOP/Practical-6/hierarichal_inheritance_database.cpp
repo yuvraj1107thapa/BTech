@@ -10,6 +10,7 @@ class Staff {
     public:
         void getstaff() {
             cout<<"Enter name: ";
+            cin.ignore();
             cin>>name;
             cout<<"Enter code: ";
             cin>>code;
@@ -103,7 +104,7 @@ int main() {
         Officer o;
         Regular r;
         Casual c;
-        cout<<"ENTER DETAILS OF EMPLOYEES: "<<endl;
+        cout<<"ENTER DETAILS OF EMPLOYEES : "<<endl;
         cout << "-----------------------------------" << endl;
         cout<<"TEACHER:"<<endl;
         t.getteacher();

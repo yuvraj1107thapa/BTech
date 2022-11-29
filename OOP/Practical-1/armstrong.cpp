@@ -23,21 +23,13 @@ bool checkArmstrongNumber(int X) {
 }
 
 int main() {
-	int X;
-    
-	X = 362;
-	if (checkArmstrongNumber(X)) {
-		cout << X << " " << "is an Armstrong Number\n";
+	int n;
+	cout << "Enter a number: ";
+	cin >> n;
+	if (checkArmstrongNumber(n)) {
+		cout << n << " " << "is an Armstrong Number\n";
 	} else {
-		cout << X << " " << "is not an Armstrong Number\n";
+		cout << n << " " << "is not an Armstrong Number\n";
 	}
-
-	X = 8208;
-	if (checkArmstrongNumber(X)) {
-		cout << X << " " << "is an Armstrong Number\n";
-	} else {
-		cout << X << " " << "is not an Armstrong Number\n";
-	}
-
 	return 0;
 }
