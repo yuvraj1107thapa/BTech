@@ -16,7 +16,7 @@ string removeChars(string s1, string s2) {
 }
 
 int main() {
-    string s1 = "imyuvrajthapa";
+    string s1 = "imyuvraj";
     string s2 = "im";
     cout << removeChars(s1, s2) << endl;
     return 0;

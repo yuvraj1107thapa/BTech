@@ -28,8 +28,8 @@ class Employee {
 };
 
 int main () {
-    Employee emp_1 = Employee ("Yuvraj", 20, 10000);
-    Employee emp_2 = Employee ("Thapa", 21, 10000);
+    Employee emp_1 = Employee ("Naman", 20, 10000);
+    Employee emp_2 = Employee ("s Rana", 21, 10000);
     int percentage_increment = 10; // 10%
     emp_1.incrementSalary(percentage_increment);
     emp_1.display();
