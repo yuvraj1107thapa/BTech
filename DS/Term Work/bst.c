@@ -127,7 +127,7 @@ int main() {
     printf("\nEnter a value for search: ");
     scanf("%d", &val);
     if(search(root, val) != NULL) {
-        printf("%d is present in the BST.", val);
+        printf("%d is present in the BST.\n", val);
     } else {
         printf("%d is not present in the BST.\n", val);
     }
