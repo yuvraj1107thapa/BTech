@@ -44,7 +44,6 @@ int main() {
     int n = strlen(arr);
     printf("%d\n", n);
     for (int i = 0; i < n; i++) {
-        // printf("%c\n", arr[i]);
         printf("%c = %d\n", arr[i], i);
     }
     mergeSort(arr, 0, n-1);

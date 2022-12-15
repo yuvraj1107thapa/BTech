@@ -7,7 +7,6 @@ struct Edge {
 };
 
 struct Graph {
-	// V-> Number of vertices, E-> Number of edges
 	int V, E;
 	struct Edge* edge;
 };
