@@ -154,17 +154,20 @@ int main() {
     three->next = NULL;
     struct node *head = NULL;
     head = one;
-    display(head);
     insertAtHead(head, 0);
     insertAtEnd(head, 4);
     insertAtEnd(head, 5);
+    printf("Linked list: "); 
     display(head);
     struct node *evenHead = (struct node *)malloc(sizeof(struct node));
     struct node *oddHead = (struct node *)malloc(sizeof(struct node));
     evenHead->val = -1;
     oddHead->val = -1;
     split(head, oddHead, evenHead);
+    printf("Split linked list in two linked list Q & R from P.\n");
+    printf("Linked list Q with all elements in odd positon: ");
     display(evenHead->next);
+    printf("Linked list R with all elements in even positon: ");
     display(oddHead->next);
     return 0;
 }

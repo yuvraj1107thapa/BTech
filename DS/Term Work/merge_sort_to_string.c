@@ -42,13 +42,10 @@ int main() {
     printf("Enter a string: ");
     scanf("%s", &arr);
     int n = strlen(arr);
-    printf("%d\n", n);
-    for (int i = 0; i < n; i++) {
-        printf("%c = %d\n", arr[i], i);
-    }
+    printf("After merge sort: ");
     mergeSort(arr, 0, n-1);
     for (int i = 0; i < n; i++) {
-        printf("%c = %d\n", arr[i], i);
+        printf("%c", arr[i]);
     }
     return 0;
 }

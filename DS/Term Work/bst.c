@@ -122,8 +122,9 @@ int main() {
     insert(root, 5);
     insert(root, 15);
     insert(root, 1);
-    inorder(root);
     int val;
+    printf("Binary Search Tree (Inorder Traversal): ");
+    inorder(root);
     printf("\nEnter a value for search: ");
     scanf("%d", &val);
     if(search(root, val) != NULL) {

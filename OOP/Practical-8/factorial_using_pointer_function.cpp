@@ -1,19 +1,20 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
-int findFactorial(int no) {
-	if (no == 2){
-		return no;
-	}
-	return no * findFactorial(no - 1);
+int factorial(int n) {
+    if (n == 0) {
+        return 1;
+    }
+    return n * factorial(n - 1);
 }
 
 int main() {
-	int no;
-	cout << "Enter a number to find factorial : " << endl; 
-    cin >> no;
-	int (*func)(int);
-	func = &findFactorial;
-	cout << func(no) << endl;
+    int num;
+    int (*factorialPtr)(int) = factorial;  //pointer to function
+
+    cout << "Enter a number: ";
+    cin >> num;
+
+    cout << "Factorial of " << num << " is: " << factorialPtr(num) << endl;
     return 0;
 }
