@@ -1,4 +1,6 @@
 #include <iostream>
+#include <string>
+#include <exception>
 
 double readNumber() {
     double number;
@@ -25,7 +27,7 @@ int main() {
         double result = divide(a, b);
         std::cout << "Result: " << result << std::endl;
     } catch (const char* e) {
-        std::cerr << e << std::endl;
+        std::cout << e << std::endl;
     }
     return 0;
 }

@@ -118,10 +118,10 @@ void inorder(struct node* root) {
 int main() {
     struct node *root = NULL;
     root = insert(root, 10);
-    insert(root, 20);
-    insert(root, 5);
-    insert(root, 15);
-    insert(root, 1);
+    root = insert(root, 20);
+    root = insert(root, 5);
+    root = insert(root, 15);
+    root = insert(root, 1);
     int val;
     printf("Binary Search Tree (Inorder Traversal): ");
     inorder(root);
